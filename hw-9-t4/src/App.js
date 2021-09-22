@@ -5,6 +5,8 @@ import Blog from "./components/Blog";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import GamePage from "./components/GamePage";
+import WinnerPage from "./components/WinnerPage";
 import Admin from "./components/Admin";
 // import PrivateRoute from "./components/PrivateRoute";
 import PrivateRoute2 from "./components/PrivateRoute2";
@@ -33,6 +35,9 @@ function App() {
           <Route path="/blog">
             <Blog />
           </Route>
+
+          <Route exact path="/game" component={GamePage} />
+          <Route exact path="/winner" component={WinnerPage} />
 
           {/* <PrivateRoute path="/admin">
             <Admin />
